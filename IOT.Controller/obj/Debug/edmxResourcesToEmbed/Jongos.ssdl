@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JONGOS_DBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="JONGOS_DBModelStoreContainer">
+    <EntitySet Name="Devices" EntityType="JONGOS_DBModel.Store.Devices" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DeviceState" EntityType="JONGOS_DBModel.Store.DeviceState" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Modules" EntityType="JONGOS_DBModel.Store.Modules" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Devices">
+    <Key>
+      <PropertyRef Name="DeviceID" />
+    </Key>
+    <Property Name="DeviceID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="PIN" Type="smallint" />
+    <Property Name="Description" Type="ntext" />
+  </EntityType>
+  <EntityType Name="DeviceState">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DeviceName" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="PIN" Type="int" />
+  </EntityType>
+  <EntityType Name="Modules">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VoiceCommand" Type="varchar" MaxLength="250" />
+    <Property Name="CommandUrl" Type="varchar" MaxLength="250" />
+    <Property Name="MachineAnswer" Type="varchar" MaxLength="250" />
+    <Property Name="isAction" Type="bit" />
+    <Property Name="isSpeak" Type="bit" />
+    <Property Name="SpecialParam" Type="varchar" MaxLength="50" />
+    <Property Name="DeviceID" Type="int" />
+  </EntityType>
+</Schema>

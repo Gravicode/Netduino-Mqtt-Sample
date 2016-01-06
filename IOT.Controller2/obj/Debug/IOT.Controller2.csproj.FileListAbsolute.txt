@@ -1,0 +1,11 @@
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller2\bin\Debug\IOT.Controller2.exe.config
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller2\bin\Debug\IOT.Controller2.exe
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller2\bin\Debug\IOT.Controller2.pdb
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller2\bin\Debug\EntityFramework.dll
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller2\bin\Debug\libpxcclr.cs.dll
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller2\bin\Debug\M2Mqtt.Net.dll
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller2\bin\Debug\EntityFramework.xml
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller2\bin\Debug\M2Mqtt.Net.pdb
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller2\obj\Debug\IOT.Controller2.csprojResolveAssemblyReference.cache
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller2\obj\Debug\IOT.Controller2.exe
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller2\obj\Debug\IOT.Controller2.pdb

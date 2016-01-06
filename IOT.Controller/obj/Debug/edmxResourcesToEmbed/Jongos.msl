@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JONGOS_DBModelStoreContainer" CdmEntityContainer="JONGOS_DBEntities">
+    <EntitySetMapping Name="Devices">
+      <EntityTypeMapping TypeName="JONGOS_DBModel.Device">
+        <MappingFragment StoreEntitySet="Devices">
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PIN" ColumnName="PIN" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeviceStates">
+      <EntityTypeMapping TypeName="JONGOS_DBModel.DeviceState">
+        <MappingFragment StoreEntitySet="DeviceState">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PIN" ColumnName="PIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modules">
+      <EntityTypeMapping TypeName="JONGOS_DBModel.Module">
+        <MappingFragment StoreEntitySet="Modules">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VoiceCommand" ColumnName="VoiceCommand" />
+          <ScalarProperty Name="CommandUrl" ColumnName="CommandUrl" />
+          <ScalarProperty Name="MachineAnswer" ColumnName="MachineAnswer" />
+          <ScalarProperty Name="isAction" ColumnName="isAction" />
+          <ScalarProperty Name="isSpeak" ColumnName="isSpeak" />
+          <ScalarProperty Name="SpecialParam" ColumnName="SpecialParam" />
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

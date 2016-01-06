@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOT.Device", "IOT.Device\IOT.Device.csproj", "{79139D36-F56C-4A12-B905-A761BC024766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOT.Controller", "IOT.Controller\IOT.Controller.csproj", "{BBF0229E-4D11-4BC5-AD56-3CCB14CCA08D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOT.Controller2", "IOT.Controller2\IOT.Controller2.csproj", "{7E31330C-7B8A-41F8-B461-5CA93117F760}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "IOT.Web", "http://localhost:27315", "{4F62C1F6-FCA8-483A-A00C-EE016EAD8309}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_27315"
+		Debug.AspNetCompiler.PhysicalPath = "IOT.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_27315\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_27315"
+		Release.AspNetCompiler.PhysicalPath = "IOT.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_27315\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "IOT.Web\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2Mqtt.NetMf43", "Mqtt\M2Mqtt\M2Mqtt.NetMf43.csproj", "{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79139D36-F56C-4A12-B905-A761BC024766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79139D36-F56C-4A12-B905-A761BC024766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79139D36-F56C-4A12-B905-A761BC024766}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{79139D36-F56C-4A12-B905-A761BC024766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79139D36-F56C-4A12-B905-A761BC024766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79139D36-F56C-4A12-B905-A761BC024766}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BBF0229E-4D11-4BC5-AD56-3CCB14CCA08D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF0229E-4D11-4BC5-AD56-3CCB14CCA08D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF0229E-4D11-4BC5-AD56-3CCB14CCA08D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF0229E-4D11-4BC5-AD56-3CCB14CCA08D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E31330C-7B8A-41F8-B461-5CA93117F760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E31330C-7B8A-41F8-B461-5CA93117F760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E31330C-7B8A-41F8-B461-5CA93117F760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E31330C-7B8A-41F8-B461-5CA93117F760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F62C1F6-FCA8-483A-A00C-EE016EAD8309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F62C1F6-FCA8-483A-A00C-EE016EAD8309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F62C1F6-FCA8-483A-A00C-EE016EAD8309}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F62C1F6-FCA8-483A-A00C-EE016EAD8309}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="JONGOS_DBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="JONGOS_DBModelStoreContainer">
+          <EntitySet Name="Devices" EntityType="JONGOS_DBModel.Store.Devices" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DeviceState" EntityType="JONGOS_DBModel.Store.DeviceState" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Modules" EntityType="JONGOS_DBModel.Store.Modules" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Devices">
+          <Key>
+            <PropertyRef Name="DeviceID" />
+          </Key>
+          <Property Name="DeviceID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="250" />
+          <Property Name="PIN" Type="smallint" />
+          <Property Name="Description" Type="ntext" />
+        </EntityType>
+        <EntityType Name="DeviceState">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DeviceName" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="PIN" Type="int" />
+        </EntityType>
+        <EntityType Name="Modules">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="VoiceCommand" Type="varchar" MaxLength="250" />
+          <Property Name="CommandUrl" Type="varchar" MaxLength="250" />
+          <Property Name="MachineAnswer" Type="varchar" MaxLength="250" />
+          <Property Name="isAction" Type="bit" />
+          <Property Name="isSpeak" Type="bit" />
+          <Property Name="SpecialParam" Type="varchar" MaxLength="50" />
+          <Property Name="DeviceID" Type="int" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="JONGOS_DBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="JONGOS_DBEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Devices" EntityType="JONGOS_DBModel.Device" />
+          <EntitySet Name="DeviceStates" EntityType="JONGOS_DBModel.DeviceState" />
+          <EntitySet Name="Modules" EntityType="JONGOS_DBModel.Module" />
+        </EntityContainer>
+        <EntityType Name="Device">
+          <Key>
+            <PropertyRef Name="DeviceID" />
+          </Key>
+          <Property Name="DeviceID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="PIN" Type="Int16" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="DeviceState">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="DeviceName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="PIN" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Module">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="VoiceCommand" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="CommandUrl" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="MachineAnswer" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="isAction" Type="Boolean" />
+          <Property Name="isSpeak" Type="Boolean" />
+          <Property Name="SpecialParam" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DeviceID" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="JONGOS_DBModelStoreContainer" CdmEntityContainer="JONGOS_DBEntities">
+          <EntitySetMapping Name="Devices">
+            <EntityTypeMapping TypeName="JONGOS_DBModel.Device">
+              <MappingFragment StoreEntitySet="Devices">
+                <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="PIN" ColumnName="PIN" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeviceStates">
+            <EntityTypeMapping TypeName="JONGOS_DBModel.DeviceState">
+              <MappingFragment StoreEntitySet="DeviceState">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="PIN" ColumnName="PIN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Modules">
+            <EntityTypeMapping TypeName="JONGOS_DBModel.Module">
+              <MappingFragment StoreEntitySet="Modules">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="VoiceCommand" ColumnName="VoiceCommand" />
+                <ScalarProperty Name="CommandUrl" ColumnName="CommandUrl" />
+                <ScalarProperty Name="MachineAnswer" ColumnName="MachineAnswer" />
+                <ScalarProperty Name="isAction" ColumnName="isAction" />
+                <ScalarProperty Name="isSpeak" ColumnName="isSpeak" />
+                <ScalarProperty Name="SpecialParam" ColumnName="SpecialParam" />
+                <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

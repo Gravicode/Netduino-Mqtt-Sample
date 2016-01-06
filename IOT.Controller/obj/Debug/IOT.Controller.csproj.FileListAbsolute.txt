@@ -1,0 +1,13 @@
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller\bin\Debug\IOT.Controller.exe.config
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller\bin\Debug\IOT.Controller.exe
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller\bin\Debug\IOT.Controller.pdb
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller\bin\Debug\M2Mqtt.Net.dll
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller\bin\Debug\M2Mqtt.Net.pdb
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller\obj\Debug\IOT.Controller.csprojResolveAssemblyReference.cache
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller\obj\Debug\IOT.Controller.exe
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller\obj\Debug\IOT.Controller.pdb
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller\bin\Debug\EntityFramework.dll
+C:\DEV\Experiment\MQTT_IOT\IOT.Controller\bin\Debug\EntityFramework.xml
+C:\DEV\Experiment\MQTT_IOT\Netduino-Mqtt-Sample\IOT.Controller\bin\Debug\IOT.Controller.exe.config
+C:\DEV\Experiment\MQTT_IOT\Netduino-Mqtt-Sample\IOT.Controller\obj\Debug\IOT.Controller.exe
+C:\DEV\Experiment\MQTT_IOT\Netduino-Mqtt-Sample\IOT.Controller\obj\Debug\IOT.Controller.pdb
